@@ -1,0 +1,59 @@
+:root{
+    --bg-color: #0d0022 ;
+    --heading-color: #6e48af;
+    --text-color: #d59be0;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: var(--heading-color);
+    margin-bottom: 40px; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    width: 350px;
+    outline: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button{
+    background: transparent;
+    transition: .5s;
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+footer{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer a:hover{
+    text-decoration: none;
+}

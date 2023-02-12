@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/images/dumbbell.png" class="img-fluid align-self-center">
+        <h1>Calculadora de IMC</h1>
+        <!--coletar dados: altura peso-->
+        <form class="info-area">
+            <div class="form-group">
+                <label class="text-left" for="height">Altura<br>
+                    <input class="form-control-lg" type="number" name="altura" id="height" placeholder="Altura(cm)"> 
+                </label><br>
+                <label class="text-left" for="weight">Peso<br>
+                    <input class="form-control-lg" type="number" name="peso" id="weight" placeholder="Peso(kg)">
+                </label>
+            </div>
+            <!--calcular imc [peso(kg)/altura²(m)]-->
+            <button type="button" class="btn-lg btn-outline-success" onclick="calcIMC()">Calcular</button>
+        </form>
+    
+        <!--apresentar os dados-->
+            <div class="data"></div>
+        <!--apresentar imc e resultado final-->
+            <div class="result"></div>
+    </div>
+    <footer>Feito por <a target="_blank" href="https://github.com/johncobain">@johncobain</a></footer>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
